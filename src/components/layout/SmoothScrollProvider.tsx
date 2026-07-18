@@ -29,6 +29,7 @@ export default function SmoothScrollProvider({
       touchMultiplier: 1.1,
     });
     lenisRef.current = lenis;
+    (window as unknown as { __lenis?: Lenis }).__lenis = lenis;
 
     lenis.on("scroll", ScrollTrigger.update);
 
@@ -40,6 +41,7 @@ export default function SmoothScrollProvider({
     return () => {
       lenis.destroy();
       lenisRef.current = null;
+      delete (window as unknown as { __lenis?: Lenis }).__lenis;
     };
   }, []);
 
