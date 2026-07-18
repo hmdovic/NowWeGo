@@ -1,0 +1,38 @@
+export const WORK = [
+  {
+    slug: "meridian-vastgoed",
+    client: "Meridian Vastgoed",
+    industry: "Vastgoed",
+    title: "Een merk dat aanvoelt als het pand dat je koopt.",
+    services: ["Branding", "Web Design", "Development"],
+    result: "+164% gekwalificeerde aanvragen",
+    color: "#1c1c1e",
+  },
+  {
+    slug: "veld-capital",
+    client: "Veld Capital",
+    industry: "Finance",
+    title: "Vertrouwen overbrengen zonder een woord te zeggen.",
+    services: ["Branding", "Web Development", "SEO"],
+    result: "+3.2M€ beheerd vermogen via inbound",
+    color: "#12141c",
+  },
+  {
+    slug: "linde-hospitality",
+    client: "Linde Hospitality Group",
+    industry: "Hospitality",
+    title: "Van boutique hotel naar landelijk begrip.",
+    services: ["Social Media", "Content", "Performance"],
+    result: "+89% directe boekingen",
+    color: "#1a1512",
+  },
+  {
+    slug: "orbit-commerce",
+    client: "Orbit Commerce",
+    industry: "E-commerce",
+    title: "Elke euro media-budget herleid naar omzet.",
+    services: ["Google Ads", "Growth Marketing", "AI Automation"],
+    result: "4.7x ROAS binnen twee kwartalen",
+    color: "#141416",
+  },
+] as const;
