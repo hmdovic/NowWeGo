@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
 
 const POINTS = [
@@ -27,10 +28,19 @@ export default function WhyUs() {
   return (
     <section id="waarom" className="border-t border-ink/10 py-28 md:py-40">
       <div className="container-edge grid grid-cols-1 gap-16 lg:grid-cols-[1fr_1.3fr]">
-        <Reveal>
-          <h2 className="font-display sticky top-32 max-w-md text-4xl font-medium leading-[1.05] tracking-tight text-balance md:text-5xl">
+        <Reveal className="sticky top-32">
+          <h2 className="font-display max-w-md text-4xl font-medium leading-[1.05] tracking-tight text-balance md:text-5xl">
             Waarom bedrijven voor NowWeGo kiezen.
           </h2>
+          <div className="relative mt-10 aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl">
+            <Image
+              src="/photos/team.jpg"
+              alt="Het NowWeGo team aan het werk"
+              fill
+              sizes="(min-width: 1024px) 33vw, 90vw"
+              className="object-cover"
+            />
+          </div>
         </Reveal>
 
         <div className="grid grid-cols-1 gap-x-10 gap-y-14 sm:grid-cols-2">

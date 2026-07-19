@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
 import { WORK } from "@/lib/data/work";
 
@@ -10,8 +11,8 @@ export default function SelectedWork() {
             Geselecteerd werk
           </h2>
           <p className="max-w-sm text-base leading-relaxed text-ink/50">
-            Een greep uit trajecten waarin strategie, design en performance
-            samenkwamen tot meetbaar resultaat.
+            Een greep uit trajecten waarin strategie, productie en
+            distributie samenkwamen tot meetbaar resultaat.
           </p>
         </Reveal>
 
@@ -22,9 +23,16 @@ export default function SelectedWork() {
                 href="#contact"
                 data-cursor="view"
                 data-cursor-label="Bekijk"
-                className="group relative block aspect-[4/5] overflow-hidden rounded-2xl border border-paper/10"
-                style={{ backgroundColor: project.color }}
+                className="group relative block aspect-[4/5] overflow-hidden rounded-2xl border border-paper/10 bg-ink"
               >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover opacity-80 transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-ink/10" />
                 <div
                   className="absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100"
                   style={{
@@ -34,10 +42,10 @@ export default function SelectedWork() {
                 />
                 <div className="relative flex h-full flex-col justify-between p-8 md:p-10">
                   <div className="flex items-start justify-between">
-                    <span className="text-xs font-medium uppercase tracking-widest text-paper/50">
+                    <span className="text-xs font-medium uppercase tracking-widest text-paper/60">
                       {project.industry}
                     </span>
-                    <span className="text-xs font-medium uppercase tracking-widest text-paper/50 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    <span className="text-xs font-medium uppercase tracking-widest text-paper/60 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1">
                       ↗
                     </span>
                   </div>
@@ -47,7 +55,7 @@ export default function SelectedWork() {
                       {project.services.map((s) => (
                         <span
                           key={s}
-                          className="rounded-full border border-paper/15 px-3 py-1 text-[11px] text-paper/60"
+                          className="rounded-full border border-paper/20 bg-ink/30 px-3 py-1 text-[11px] text-paper/70 backdrop-blur-sm"
                         >
                           {s}
                         </span>
@@ -56,8 +64,8 @@ export default function SelectedWork() {
                     <h3 className="font-display text-2xl font-medium leading-tight tracking-tight text-paper md:text-3xl">
                       {project.title}
                     </h3>
-                    <div className="mt-5 flex items-center justify-between border-t border-paper/10 pt-5">
-                      <span className="text-sm font-medium text-paper/70">
+                    <div className="mt-5 flex items-center justify-between border-t border-paper/15 pt-5">
+                      <span className="text-sm font-medium text-paper/80">
                         {project.client}
                       </span>
                       <span className="text-sm font-medium text-accent-soft">

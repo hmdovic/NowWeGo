@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import TrustedBy from "@/components/sections/TrustedBy";
 import Services from "@/components/sections/Services";
+import BehindTheScenes from "@/components/sections/BehindTheScenes";
 import SelectedWork from "@/components/sections/SelectedWork";
 import WhyUs from "@/components/sections/WhyUs";
 import Process from "@/components/sections/Process";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <TrustedBy />
       <Services />
+      <BehindTheScenes />
       <SelectedWork />
       <WhyUs />
       <Process />

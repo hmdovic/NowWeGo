@@ -6,7 +6,7 @@ export const WORK = [
     title: "Video content die kijkers in kopers verandert.",
     services: ["Video Content", "Social Media", "Strategie"],
     result: "+164% gekwalificeerde aanvragen",
-    color: "#1c1c1e",
+    image: "/photos/on-set.jpg",
   },
   {
     slug: "veld-capital",
@@ -15,7 +15,7 @@ export const WORK = [
     title: "Vertrouwen overbrengen zonder een woord te zeggen.",
     services: ["Contentstrategie", "SEO Content", "LinkedIn"],
     result: "+3.2M€ beheerd vermogen via inbound",
-    color: "#12141c",
+    image: "/photos/editing-desk.jpg",
   },
   {
     slug: "linde-hospitality",
@@ -24,7 +24,7 @@ export const WORK = [
     title: "Van boutique hotel naar landelijk begrip.",
     services: ["Social Media", "Video Content", "Influencer"],
     result: "+89% directe boekingen",
-    color: "#1a1512",
+    image: "/photos/studio.jpg",
   },
   {
     slug: "orbit-commerce",
@@ -33,6 +33,6 @@ export const WORK = [
     title: "Elke video herleid naar omzet, niet naar views.",
     services: ["Reels", "Analytics", "AI Content Ops"],
     result: "4.7x ROAS binnen twee kwartalen",
-    color: "#141416",
+    image: "/photos/drone.jpg",
   },
 ] as const;
