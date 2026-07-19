@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import HeroScene from "@/components/three/HeroScene";
+import FloatingContentCards from "@/components/sections/FloatingContentCards";
 import MagneticButton from "@/components/ui/MagneticButton";
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
 
   return (
     <section className="relative z-0 flex min-h-[100svh] items-end overflow-hidden pb-20 pt-40 md:pb-28">
-      <HeroScene />
+      <FloatingContentCards />
 
       <div className="container-edge relative z-10 w-full">
         <p
@@ -34,7 +34,7 @@ export default function Hero() {
           className="mb-6 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.25em] text-ink/50 opacity-0"
         >
           <span className="h-px w-8 bg-accent" />
-          Premium Digital Marketing Agency — Den Haag
+          Content Marketing Bureau — Den Haag
         </p>
 
         <h1
@@ -43,12 +43,12 @@ export default function Hero() {
         >
           <span className="block overflow-hidden">
             <span data-line className="block">
-              Groei is
+              Content die
             </span>
           </span>
           <span className="block overflow-hidden">
             <span data-line className="block">
-              geen <span className="italic text-accent">toeval.</span>
+              niet wordt <span className="italic text-accent">overgeslagen.</span>
             </span>
           </span>
         </h1>
@@ -58,12 +58,12 @@ export default function Hero() {
           className="mt-10 flex flex-col items-start justify-between gap-8 opacity-0 md:flex-row md:items-end"
         >
           <p className="max-w-md text-lg leading-relaxed text-ink/60">
-            NowWeGo is het bureau voor merken die niet willen meedoen, maar
-            willen winnen. Branding, design en performance — samengebracht
-            tot één resultaat.
+            NowWeGo maakt video en social content die mensen laat stoppen met
+            scrollen — en volgers laat worden tot klanten. Voor merken die
+            groei serieus nemen.
           </p>
           <MagneticButton href="#contact" cursorLabel="Start">
-            Vraag een offerte aan
+            Plan een gratis contentscan
           </MagneticButton>
         </div>
       </div>

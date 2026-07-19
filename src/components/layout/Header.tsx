@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import MagneticButton from "@/components/ui/MagneticButton";
@@ -38,9 +39,19 @@ export default function Header() {
         <Link
           href="/"
           data-cursor="view"
-          className="font-display text-xl font-semibold tracking-tight text-ink"
+          className="flex items-center gap-2.5"
         >
-          NowWeGo<span className="text-accent">.</span>
+          <Image
+            src="/logo-mark.png"
+            alt=""
+            width={400}
+            height={178}
+            priority
+            className="h-4 w-auto md:h-[18px]"
+          />
+          <span className="font-display text-lg font-semibold tracking-tight text-ink">
+            NowWeGo<span className="text-accent">.</span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-10 lg:flex">

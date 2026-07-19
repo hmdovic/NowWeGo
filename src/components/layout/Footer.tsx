@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const SITEMAP = [
@@ -9,11 +10,11 @@ const SITEMAP = [
 ];
 
 const SERVICES = [
+  "Content Marketing",
+  "Social Media",
+  "Video Content",
   "Branding",
-  "Web Design",
-  "Web Development",
   "SEO",
-  "Google Ads",
   "AI Automation",
 ];
 
@@ -25,12 +26,16 @@ export default function Footer() {
       <div className="container-edge">
         <div className="grid grid-cols-1 gap-16 pb-16 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <p className="font-display text-2xl font-semibold tracking-tight text-ink">
-              NowWeGo<span className="text-accent">.</span>
-            </p>
+            <Image
+              src="/logo-full.png"
+              alt="NowWeGo — Content Marketing"
+              width={600}
+              height={572}
+              className="h-16 w-auto md:h-20"
+            />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink/50">
-              Premium digital marketing agency uit Den Haag. Wij bouwen merken
-              die winnen — met branding, design en performance die samenwerken.
+              Content marketing bureau uit Den Haag. Wij maken content die
+              mensen laat stoppen met scrollen — en klanten laat worden.
             </p>
           </div>
 

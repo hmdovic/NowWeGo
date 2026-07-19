@@ -15,30 +15,30 @@ export const PROCESS = [
     number: "01",
     title: "Ontdekken",
     description:
-      "We duiken in je merk, markt en concurrentie voordat er ook maar iets ontworpen wordt.",
+      "We duiken in je merk, doelgroep en concurrentie voordat er ook maar één camera aangaat.",
   },
   {
     number: "02",
     title: "Strategie",
     description:
-      "Positionering en een plan met heldere KPI's — geen aannames, wel onderbouwing.",
+      "Een contentkalender met heldere KPI's — geen aannames, wel onderbouwing.",
   },
   {
     number: "03",
-    title: "Ontwerp",
+    title: "Concept",
     description:
-      "Identiteit en interfaces die het verschil voelbaar maken op elk touchpoint.",
+      "Scripts en concepten die het verschil voelbaar maken op elk platform.",
   },
   {
     number: "04",
-    title: "Bouwen",
+    title: "Productie",
     description:
-      "Snelle, schaalbare implementatie — getest, geoptimaliseerd en klaar voor groei.",
+      "Opnames en montage — snel, schaalbaar en klaar voor elk kanaal.",
   },
   {
     number: "05",
-    title: "Lancering",
-    description: "Een gecontroleerde launch met alles wat live moet staan.",
+    title: "Publicatie",
+    description: "Een gecontroleerde uitrol met alles wat live moet staan.",
   },
   {
     number: "06",
@@ -49,22 +49,22 @@ export const PROCESS = [
 ] as const;
 
 export const RESULTS = [
-  { value: "238", suffix: "%", label: "gemiddelde omzetgroei bij klanten" },
-  { value: "50", suffix: "+", label: "merken geholpen aan volgende niveau" },
-  { value: "12", suffix: "M+", label: "aan mediabudget beheerd" },
+  { value: "238", suffix: "%", label: "gemiddelde bereikgroei bij klanten" },
+  { value: "50", suffix: "+", label: "merken geholpen aan meer views" },
+  { value: "40", suffix: "M+", label: "views gegenereerd voor klanten" },
   { value: "4.9", suffix: "/5", label: "gemiddelde klantwaardering" },
 ] as const;
 
 export const TESTIMONIALS = [
   {
     quote:
-      "NowWeGo behandelde ons merk alsof het hun eigen bedrijf was. Het resultaat overtrof elke verwachting die we hadden.",
+      "NowWeGo behandelde onze content alsof het hun eigen merk was. Het resultaat overtrof elke verwachting die we hadden.",
     name: "Sanne de Wit",
     role: "CEO, Meridian Vastgoed",
   },
   {
     quote:
-      "Eindelijk een bureau dat strategie en uitvoering op hetzelfde niveau levert. Geen ruis, alleen resultaat.",
+      "Eindelijk een bureau dat strategie en productie op hetzelfde niveau levert. Geen ruis, alleen resultaat.",
     name: "Thomas van Rijn",
     role: "Directeur, Veld Capital",
   },
@@ -80,17 +80,17 @@ export const FAQ = [
   {
     question: "Met wat voor bedrijven werkt NowWeGo?",
     answer:
-      "We werken met MKB, scale-ups en gevestigde spelers in onder meer vastgoed, finance, legal, hospitality, e-commerce en tech — bedrijven die serieus werk maken van hun merk.",
+      "We werken met MKB, scale-ups en gevestigde spelers in onder meer vastgoed, finance, legal, hospitality, e-commerce en tech — bedrijven die serieus werk maken van hun content.",
   },
   {
     question: "Wat kost een traject bij NowWeGo?",
     answer:
-      "Onze trajecten zijn maatwerk en high-ticket, afgestemd op scope en ambitie. Na een intake ontvang je een concreet voorstel — geen verrassingen achteraf.",
+      "Onze trajecten zijn maatwerk, afgestemd op scope en ambitie. Na een gratis contentscan ontvang je een concreet voorstel — geen verrassingen achteraf.",
   },
   {
-    question: "Hoe lang duurt een gemiddeld project?",
+    question: "Hoe lang duurt een gemiddeld traject?",
     answer:
-      "Een brandingtraject duurt doorgaans 4-8 weken, een volledig platform 8-14 weken. Performance marketing en groei zijn doorlopende samenwerkingen.",
+      "Een contentstrategie staat doorgaans binnen 2-3 weken. Video- en socialproductie zijn meestal doorlopende maandelijkse samenwerkingen.",
   },
   {
     question: "Werken jullie ook buiten Den Haag?",
@@ -98,8 +98,8 @@ export const FAQ = [
       "Zeker. Ons kantoor staat in Den Haag, maar we werken landelijk en internationaal — remote of op locatie.",
   },
   {
-    question: "Kan ik alleen SEO of Ads afnemen zonder volledig traject?",
+    question: "Kan ik alleen video of alleen social afnemen?",
     answer:
-      "Ja. Al onze diensten zijn los af te nemen, al zien we het beste resultaat wanneer branding, design en performance samenwerken.",
+      "Ja. Al onze diensten zijn los af te nemen, al zien we het beste resultaat wanneer strategie, productie en distributie samenwerken.",
   },
 ] as const;

@@ -4,7 +4,7 @@ const POINTS = [
   {
     title: "Eén team, geen overdracht",
     description:
-      "Strategie, design, development en performance zitten aan dezelfde tafel — vanaf dag één.",
+      "Strategie, productie en distributie zitten aan dezelfde tafel — vanaf dag één.",
   },
   {
     title: "Gebouwd op data",
@@ -17,9 +17,9 @@ const POINTS = [
       "Geen junior's die leren op jouw budget. Je werkt met mensen die het al hebben bewezen.",
   },
   {
-    title: "Resultaat, geen rapportage",
+    title: "Resultaat, geen vertoningen",
     description:
-      "We meten wat telt: omzet, leads en merkwaarde — niet vertoningen zonder betekenis.",
+      "We meten wat telt: bereik, leads en omzet — niet views zonder betekenis.",
   },
 ];
 
