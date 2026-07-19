@@ -21,21 +21,21 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-paper/10 bg-ink pt-24">
+    <footer className="border-t border-ink/10 bg-paper pt-24">
       <div className="container-edge">
         <div className="grid grid-cols-1 gap-16 pb-16 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <p className="font-display text-2xl font-semibold tracking-tight text-paper">
+            <p className="font-display text-2xl font-semibold tracking-tight text-ink">
               NowWeGo<span className="text-accent">.</span>
             </p>
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-paper/50">
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink/50">
               Premium digital marketing agency uit Den Haag. Wij bouwen merken
               die winnen — met branding, design en performance die samenwerken.
             </p>
           </div>
 
           <div>
-            <p className="text-xs font-medium uppercase tracking-widest text-paper/40">
+            <p className="text-xs font-medium uppercase tracking-widest text-ink/40">
               Sitemap
             </p>
             <ul className="mt-5 space-y-3">
@@ -44,7 +44,7 @@ export default function Footer() {
                   <a
                     href={item.href}
                     data-cursor="view"
-                    className="text-sm text-paper/70 transition-colors hover:text-paper"
+                    className="text-sm text-ink/70 transition-colors hover:text-ink"
                   >
                     {item.label}
                   </a>
@@ -54,12 +54,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-medium uppercase tracking-widest text-paper/40">
+            <p className="text-xs font-medium uppercase tracking-widest text-ink/40">
               Diensten
             </p>
             <ul className="mt-5 space-y-3">
               {SERVICES.map((item) => (
-                <li key={item} className="text-sm text-paper/70">
+                <li key={item} className="text-sm text-ink/70">
                   {item}
                 </li>
               ))}
@@ -67,25 +67,25 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-medium uppercase tracking-widest text-paper/40">
+            <p className="text-xs font-medium uppercase tracking-widest text-ink/40">
               Contact
             </p>
-            <ul className="mt-5 space-y-3 text-sm text-paper/70">
+            <ul className="mt-5 space-y-3 text-sm text-ink/70">
               <li>
                 <a
                   href="mailto:hello@nowwego.nl"
                   data-cursor="view"
-                  className="transition-colors hover:text-paper"
+                  className="transition-colors hover:text-ink"
                 >
                   hello@nowwego.nl
                 </a>
               </li>
               <li>Den Haag, Nederland</li>
               <li className="flex gap-4 pt-2">
-                <a href="#" data-cursor="view" className="hover:text-paper">
+                <a href="#" data-cursor="view" className="hover:text-ink">
                   LinkedIn
                 </a>
-                <a href="#" data-cursor="view" className="hover:text-paper">
+                <a href="#" data-cursor="view" className="hover:text-ink">
                   Instagram
                 </a>
               </li>
@@ -93,13 +93,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-start justify-between gap-4 border-t border-paper/10 py-8 text-xs text-paper/40 md:flex-row md:items-center">
+        <div className="flex flex-col items-start justify-between gap-4 border-t border-ink/10 py-8 text-xs text-ink/40 md:flex-row md:items-center">
           <p>© {year} NowWeGo. Alle rechten voorbehouden.</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-paper/70">
+            <Link href="#" className="hover:text-ink/70">
               Privacybeleid
             </Link>
-            <Link href="#" className="hover:text-paper/70">
+            <Link href="#" className="hover:text-ink/70">
               Algemene voorwaarden
             </Link>
           </div>

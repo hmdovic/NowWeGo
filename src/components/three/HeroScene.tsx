@@ -31,7 +31,7 @@ export default function HeroScene() {
 
   return (
     <div ref={rootRef} className="absolute inset-0 -z-10">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(61,92,255,0.18),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_45%,rgba(61,92,255,0.1),transparent_60%)]" />
       {canRender3D && inView && (
         <div className="absolute inset-0">
           <CanvasBoundary>

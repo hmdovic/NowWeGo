@@ -29,7 +29,7 @@ export default function Marquee({
         {track.map((item, i) => (
           <span
             key={`${item}-${i}`}
-            className="whitespace-nowrap text-2xl font-medium tracking-tight text-paper/35 md:text-3xl"
+            className="whitespace-nowrap text-2xl font-medium tracking-tight text-ink/35 md:text-3xl"
           >
             {item}
           </span>

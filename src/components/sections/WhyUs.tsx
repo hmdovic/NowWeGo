@@ -25,7 +25,7 @@ const POINTS = [
 
 export default function WhyUs() {
   return (
-    <section id="waarom" className="border-t border-paper/10 py-28 md:py-40">
+    <section id="waarom" className="border-t border-ink/10 py-28 md:py-40">
       <div className="container-edge grid grid-cols-1 gap-16 lg:grid-cols-[1fr_1.3fr]">
         <Reveal>
           <h2 className="font-display sticky top-32 max-w-md text-4xl font-medium leading-[1.05] tracking-tight text-balance md:text-5xl">
@@ -42,7 +42,7 @@ export default function WhyUs() {
               <h3 className="font-display mb-3 text-xl font-medium tracking-tight">
                 {point.title}
               </h3>
-              <p className="text-sm leading-relaxed text-paper/50">
+              <p className="text-sm leading-relaxed text-ink/50">
                 {point.description}
               </p>
             </Reveal>

@@ -72,10 +72,10 @@ export default function CustomCursor() {
     <div className="pointer-events-none fixed inset-0 z-[70]" aria-hidden="true">
       <div
         ref={ringRef}
-        className="fixed left-0 top-0 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-paper/40 backdrop-blur-[1px] transition-colors"
+        className="fixed left-0 top-0 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-ink/40 backdrop-blur-[1px] transition-colors"
       >
         {label && (
-          <span className="text-[10px] font-medium uppercase tracking-wider text-paper">
+          <span className="text-[10px] font-medium uppercase tracking-wider text-ink">
             {label}
           </span>
         )}

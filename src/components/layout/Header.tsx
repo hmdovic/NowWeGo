@@ -31,14 +31,14 @@ export default function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "backdrop-blur-md bg-ink/70 border-b border-paper/10" : "bg-transparent"
+        scrolled ? "backdrop-blur-md bg-paper/70 border-b border-ink/10" : "bg-transparent"
       }`}
     >
       <div className="container-edge flex h-20 items-center justify-between md:h-24">
         <Link
           href="/"
           data-cursor="view"
-          className="font-display text-xl font-semibold tracking-tight text-paper"
+          className="font-display text-xl font-semibold tracking-tight text-ink"
         >
           NowWeGo<span className="text-accent">.</span>
         </Link>
@@ -49,7 +49,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               data-cursor="view"
-              className="text-sm font-medium tracking-wide text-paper/70 transition-colors hover:text-paper"
+              className="text-sm font-medium tracking-wide text-ink/70 transition-colors hover:text-ink"
             >
               {link.label}
             </a>
@@ -71,12 +71,12 @@ export default function Header() {
           className="relative z-[80] flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
         >
           <span
-            className={`h-px w-6 bg-paper transition-transform duration-300 ${
+            className={`h-px w-6 bg-ink transition-transform duration-300 ${
               open ? "translate-y-[3.5px] rotate-45" : ""
             }`}
           />
           <span
-            className={`h-px w-6 bg-paper transition-transform duration-300 ${
+            className={`h-px w-6 bg-ink transition-transform duration-300 ${
               open ? "-translate-y-[3.5px] -rotate-45" : ""
             }`}
           />
@@ -90,7 +90,7 @@ export default function Header() {
             animate={{ clipPath: "inset(0 0 0% 0)" }}
             exit={{ clipPath: "inset(0 0 100% 0)" }}
             transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
-            className="fixed inset-0 z-[70] flex flex-col justify-center bg-ink lg:hidden"
+            className="fixed inset-0 z-[70] flex flex-col justify-center bg-paper lg:hidden"
           >
             <nav className="container-edge flex flex-col gap-6">
               {NAV_LINKS.map((link, i) => (
@@ -101,7 +101,7 @@ export default function Header() {
                   initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.15 + i * 0.06, duration: 0.5, ease: "easeOut" }}
-                  className="font-display text-4xl font-medium text-paper"
+                  className="font-display text-4xl font-medium text-ink"
                 >
                   {link.label}
                 </motion.a>

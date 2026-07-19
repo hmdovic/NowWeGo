@@ -18,7 +18,7 @@ export default function Testimonials() {
   const current = TESTIMONIALS[active];
 
   return (
-    <section className="border-t border-paper/10 py-28 md:py-40">
+    <section className="border-t border-ink/10 py-28 md:py-40">
       <div className="container-edge">
         <Reveal className="mx-auto max-w-3xl text-center">
           <span className="mb-8 block text-6xl text-accent">&ldquo;</span>
@@ -34,8 +34,8 @@ export default function Testimonials() {
                 <p className="font-display text-2xl font-medium leading-snug tracking-tight text-balance md:text-3xl">
                   {current.quote}
                 </p>
-                <p className="mt-8 text-sm text-paper/50">
-                  <span className="text-paper/80">{current.name}</span> —{" "}
+                <p className="mt-8 text-sm text-ink/50">
+                  <span className="text-ink/80">{current.name}</span> —{" "}
                   {current.role}
                 </p>
               </motion.div>
@@ -51,7 +51,7 @@ export default function Testimonials() {
                 onClick={() => setActive(i)}
                 aria-label={`Toon testimonial van ${t.name}`}
                 className={`h-1.5 rounded-full transition-all duration-500 ${
-                  i === active ? "w-8 bg-accent" : "w-1.5 bg-paper/20"
+                  i === active ? "w-8 bg-accent" : "w-1.5 bg-ink/20"
                 }`}
               />
             ))}

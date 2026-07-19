@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="container-edge relative z-10 w-full">
         <p
           data-hero-fade
-          className="mb-6 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.25em] text-paper/50 opacity-0"
+          className="mb-6 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.25em] text-ink/50 opacity-0"
         >
           <span className="h-px w-8 bg-accent" />
           Premium Digital Marketing Agency — Den Haag
@@ -39,7 +39,7 @@ export default function Hero() {
 
         <h1
           ref={headlineRef}
-          className="font-display text-[13vw] font-medium leading-[0.95] tracking-tight text-paper sm:text-[9vw] lg:text-[6.4vw]"
+          className="font-display text-[13vw] font-medium leading-[0.95] tracking-tight text-ink sm:text-[9vw] lg:text-[6.4vw]"
         >
           <span className="block overflow-hidden">
             <span data-line className="block">
@@ -57,7 +57,7 @@ export default function Hero() {
           data-hero-fade
           className="mt-10 flex flex-col items-start justify-between gap-8 opacity-0 md:flex-row md:items-end"
         >
-          <p className="max-w-md text-lg leading-relaxed text-paper/60">
+          <p className="max-w-md text-lg leading-relaxed text-ink/60">
             NowWeGo is het bureau voor merken die niet willen meedoen, maar
             willen winnen. Branding, design en performance — samengebracht
             tot één resultaat.
@@ -70,9 +70,9 @@ export default function Hero() {
 
       <div
         data-hero-fade
-        className="absolute bottom-8 right-6 z-10 hidden -rotate-90 items-center gap-3 text-xs uppercase tracking-[0.25em] text-paper/40 opacity-0 md:right-10 lg:flex"
+        className="absolute bottom-8 right-6 z-10 hidden -rotate-90 items-center gap-3 text-xs uppercase tracking-[0.25em] text-ink/40 opacity-0 md:right-10 lg:flex"
       >
-        <span className="h-px w-10 bg-paper/30" />
+        <span className="h-px w-10 bg-ink/30" />
         Scroll
       </div>
     </section>
