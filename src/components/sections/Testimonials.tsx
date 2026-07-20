@@ -16,9 +16,13 @@ export default function Testimonials() {
   }, []);
 
   const current = TESTIMONIALS[active];
+  const initials = current.name
+    .split(" ")
+    .map((n) => n[0])
+    .join("");
 
   return (
-    <section className="border-t border-ink/10 py-28 md:py-40">
+    <section className="border-t border-ink/10 py-20 md:py-28">
       <div className="container-edge">
         <Reveal className="mx-auto max-w-3xl text-center">
           <span className="mb-8 block text-6xl text-accent">&ldquo;</span>
@@ -34,10 +38,15 @@ export default function Testimonials() {
                 <p className="font-display text-2xl font-medium leading-snug tracking-tight text-balance md:text-3xl">
                   {current.quote}
                 </p>
-                <p className="mt-8 text-sm text-ink/50">
-                  <span className="text-ink/80">{current.name}</span> —{" "}
-                  {current.role}
-                </p>
+                <div className="mt-8 flex items-center justify-center gap-3">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-ink text-xs font-medium text-paper">
+                    {initials}
+                  </span>
+                  <p className="text-sm text-ink/50">
+                    <span className="text-ink/80">{current.name}</span> —{" "}
+                    {current.role}
+                  </p>
+                </div>
               </motion.div>
             </AnimatePresence>
           </div>

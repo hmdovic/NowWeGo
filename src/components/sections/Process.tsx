@@ -3,7 +3,7 @@ import { PROCESS } from "@/lib/data/content";
 
 export default function Process() {
   return (
-    <section id="werkwijze" className="border-t border-ink/10 bg-paper-dim py-28 md:py-40">
+    <section id="werkwijze" className="border-t border-ink/10 bg-paper-dim py-20 md:py-28">
       <div className="container-edge">
         <Reveal className="mb-16 max-w-xl md:mb-24">
           <h2 className="font-display text-4xl font-medium leading-[1.05] tracking-tight text-balance md:text-5xl lg:text-6xl">

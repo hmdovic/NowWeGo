@@ -4,7 +4,7 @@ import { RESULTS } from "@/lib/data/content";
 
 export default function Results() {
   return (
-    <section className="border-t border-ink/10 py-28 md:py-40">
+    <section className="border-t border-ink/10 py-20 md:py-28">
       <div className="container-edge grid grid-cols-2 gap-x-8 gap-y-16 lg:grid-cols-4">
         {RESULTS.map((result, i) => (
           <Reveal key={result.label} delay={i * 0.05}>

@@ -4,7 +4,7 @@ import { WORK } from "@/lib/data/work";
 
 export default function SelectedWork() {
   return (
-    <section id="werk" className="border-t border-ink/10 py-28 md:py-40">
+    <section id="werk" className="border-t border-ink/10 py-20 md:py-28">
       <div className="container-edge">
         <Reveal className="mb-16 flex flex-col gap-6 md:mb-24 md:flex-row md:items-end md:justify-between">
           <h2 className="font-display max-w-xl text-4xl font-medium leading-[1.05] tracking-tight text-balance md:text-5xl lg:text-6xl">

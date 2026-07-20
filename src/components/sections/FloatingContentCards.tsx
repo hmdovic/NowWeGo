@@ -134,14 +134,14 @@ function TimelineCard() {
 
 export default function FloatingContentCards() {
   return (
-    <div className="pointer-events-none absolute inset-0 -z-10 hidden md:block">
-      <div className="absolute right-[6%] top-[16%]">
+    <div className="pointer-events-none absolute inset-0 -z-10 hidden xl:block">
+      <div className="absolute right-[4%] top-32">
         <ReelsCard />
       </div>
-      <div className="absolute right-[26%] top-[42%]">
+      <div className="absolute right-[10%] top-[50%]">
         <AnalyticsCard />
       </div>
-      <div className="absolute right-[10%] top-[58%]">
+      <div className="absolute right-[1%] top-[76%]">
         <TimelineCard />
       </div>
     </div>

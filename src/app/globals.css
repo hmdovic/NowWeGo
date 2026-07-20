@@ -124,6 +124,24 @@ body {
   animation: marquee-reverse linear infinite;
 }
 
+@keyframes periodic-pulse {
+  0%,
+  92%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+  94% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0.25);
+  }
+  97% {
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+}
+
+.animate-periodic-pulse {
+  animation: periodic-pulse 5s ease-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

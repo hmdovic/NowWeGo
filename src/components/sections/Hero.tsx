@@ -5,6 +5,12 @@ import gsap from "gsap";
 import FloatingContentCards from "@/components/sections/FloatingContentCards";
 import MagneticButton from "@/components/ui/MagneticButton";
 
+const MOBILE_STATS = [
+  { value: "24.8K", label: "views per Reel" },
+  { value: "+284%", label: "bereik" },
+  { value: "4.9★", label: "klantscore" },
+];
+
 export default function Hero() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
 
@@ -25,46 +31,73 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative z-0 flex min-h-[100svh] items-end overflow-hidden pb-20 pt-40 md:pb-28">
+    <section className="relative z-0 flex min-h-[100svh] items-center overflow-hidden pt-24 pb-16 md:pt-28">
       <FloatingContentCards />
 
       <div className="container-edge relative z-10 w-full">
-        <p
-          data-hero-fade
-          className="mb-6 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.25em] text-ink/50 opacity-0"
-        >
-          <span className="h-px w-8 bg-accent" />
-          Content Marketing Bureau — Den Haag
-        </p>
+        <div className="max-w-2xl lg:max-w-3xl">
+          <p
+            data-hero-fade
+            className="mb-6 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.25em] text-ink/50 opacity-0"
+          >
+            <span className="h-px w-8 bg-accent" />
+            Content Marketing Bureau — Den Haag
+          </p>
 
-        <h1
-          ref={headlineRef}
-          className="font-display text-[13vw] font-medium leading-[0.95] tracking-tight text-ink sm:text-[9vw] lg:text-[6.4vw]"
-        >
-          <span className="block overflow-hidden">
-            <span data-line className="block">
-              Content die
+          <h1
+            ref={headlineRef}
+            className="font-display text-[13vw] font-medium leading-[0.95] tracking-tight text-ink sm:text-[9vw] lg:text-[5.5rem] xl:text-[6.5rem]"
+          >
+            <span className="block overflow-hidden">
+              <span data-line className="block">
+                Content die
+              </span>
             </span>
-          </span>
-          <span className="block overflow-hidden">
-            <span data-line className="block">
-              niet wordt <span className="italic text-accent">overgeslagen.</span>
+            <span className="block overflow-hidden">
+              <span data-line className="block">
+                niet wordt <span className="italic text-accent">overgeslagen.</span>
+              </span>
             </span>
-          </span>
-        </h1>
+          </h1>
+
+          <div
+            data-hero-fade
+            className="mt-10 flex flex-col items-start gap-8 opacity-0"
+          >
+            <div>
+              <p className="max-w-md text-lg leading-relaxed text-ink/60">
+                NowWeGo maakt video en social content die mensen laat stoppen
+                met scrollen — en volgers laat worden tot klanten. Voor merken
+                die groei serieus nemen.
+              </p>
+              <div className="mt-6 flex items-center gap-3 text-sm text-ink/60">
+                <span className="tracking-wide text-accent">★★★★★</span>
+                <span>4.9/5 — 50+ merken gingen je voor</span>
+              </div>
+            </div>
+            <MagneticButton href="#contact" cursorLabel="Start">
+              Plan een gratis contentscan
+            </MagneticButton>
+          </div>
+        </div>
 
         <div
           data-hero-fade
-          className="mt-10 flex flex-col items-start justify-between gap-8 opacity-0 md:flex-row md:items-end"
+          className="mt-14 grid grid-cols-3 gap-4 opacity-0 xl:hidden"
         >
-          <p className="max-w-md text-lg leading-relaxed text-ink/60">
-            NowWeGo maakt video en social content die mensen laat stoppen met
-            scrollen — en volgers laat worden tot klanten. Voor merken die
-            groei serieus nemen.
-          </p>
-          <MagneticButton href="#contact" cursorLabel="Start">
-            Plan een gratis contentscan
-          </MagneticButton>
+          {MOBILE_STATS.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-2xl border border-ink/10 bg-paper-dim px-3 py-4 text-center"
+            >
+              <p className="font-display text-lg font-semibold text-ink">
+                {stat.value}
+              </p>
+              <p className="mt-1 text-[10px] uppercase tracking-wide text-ink/45">
+                {stat.label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 

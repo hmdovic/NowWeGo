@@ -7,6 +7,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/layout/ScrollProgress";
 import FloatingCTA from "@/components/layout/FloatingCTA";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -118,6 +119,7 @@ export default function RootLayout({
         <CustomCursor />
         <ScrollProgress />
         <FloatingCTA />
+        <WhatsAppButton />
         <SmoothScrollProvider>
           <Header />
           <main id="main">{children}</main>
