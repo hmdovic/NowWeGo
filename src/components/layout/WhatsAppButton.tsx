@@ -1,12 +1,11 @@
 "use client";
 
-const PLACEHOLDER_NUMBER = "31600000000";
+import { whatsappLink } from "@/lib/contact";
+
 const PREFILLED_MESSAGE = "Hoi NowWeGo, ik wil graag meer weten over jullie content marketing.";
 
 export default function WhatsAppButton() {
-  const href = `https://wa.me/${PLACEHOLDER_NUMBER}?text=${encodeURIComponent(
-    PREFILLED_MESSAGE
-  )}`;
+  const href = whatsappLink(PREFILLED_MESSAGE);
 
   return (
     <a

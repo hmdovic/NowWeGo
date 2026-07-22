@@ -75,9 +75,23 @@ export default function Hero() {
                 <span>4.9/5 — 50+ merken gingen je voor</span>
               </div>
             </div>
-            <MagneticButton href="#contact" cursorLabel="Start">
-              Plan een gratis contentscan
-            </MagneticButton>
+            <div>
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <MagneticButton href="#contact" cursorLabel="Start">
+                  Plan een gratis contentscan
+                </MagneticButton>
+                <a
+                  href="#werk"
+                  data-cursor="view"
+                  className="text-sm font-medium text-ink/60 underline decoration-ink/20 underline-offset-4 transition-colors hover:text-ink hover:decoration-ink/50"
+                >
+                  Bekijk ons werk →
+                </a>
+              </div>
+              <p className="mt-4 text-xs text-ink/40">
+                Geen verplichtingen — reactie binnen 24 uur.
+              </p>
+            </div>
           </div>
         </div>
 
