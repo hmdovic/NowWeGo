@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { whatsappLink } from "@/lib/contact";
 
 const SITEMAP = [
   { label: "Diensten", href: "#services" },
@@ -76,6 +77,19 @@ export default function Footer() {
               Contact
             </p>
             <ul className="mt-5 space-y-3 text-sm text-ink/70">
+              <li>
+                <a
+                  href={whatsappLink(
+                    "Hoi NowWeGo, ik wil graag meer weten over jullie content marketing."
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-cursor="view"
+                  className="transition-colors hover:text-ink"
+                >
+                  WhatsApp ons
+                </a>
+              </li>
               <li>
                 <a
                   href="mailto:hello@nowwego.nl"

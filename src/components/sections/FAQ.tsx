@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Reveal from "@/components/ui/Reveal";
 import { FAQ } from "@/lib/data/content";
+import { whatsappLink } from "@/lib/contact";
 
 export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
@@ -52,6 +53,21 @@ export default function FAQSection() {
               </div>
             );
           })}
+          <Reveal>
+            <p className="pt-8 text-sm leading-relaxed text-ink/50">
+              Staat je vraag er niet bij?{" "}
+              <a
+                href={whatsappLink("Hoi NowWeGo, ik heb nog een vraag.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="view"
+                className="font-medium text-ink underline decoration-ink/20 underline-offset-4 transition-colors hover:decoration-ink/50"
+              >
+                WhatsApp ons direct
+              </a>{" "}
+              — je krijgt binnen 24 uur antwoord.
+            </p>
+          </Reveal>
         </Reveal>
       </div>
     </section>

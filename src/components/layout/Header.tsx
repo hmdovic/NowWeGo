@@ -68,8 +68,8 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <MagneticButton href="#contact" className="!px-6 !py-3 text-xs">
-            Vraag een offerte aan
+          <MagneticButton href="#contact" cursorLabel="Start" className="!px-6 !py-3 text-xs">
+            Plan een gratis contentscan
           </MagneticButton>
         </div>
 
@@ -117,6 +117,24 @@ export default function Header() {
                   {link.label}
                 </motion.a>
               ))}
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.15 + NAV_LINKS.length * 0.06,
+                  duration: 0.5,
+                  ease: "easeOut",
+                }}
+                className="mt-4"
+              >
+                <MagneticButton
+                  href="#contact"
+                  cursorLabel="Start"
+                  onClick={() => setOpen(false)}
+                >
+                  Plan een gratis contentscan
+                </MagneticButton>
+              </motion.div>
             </nav>
           </motion.div>
         )}
